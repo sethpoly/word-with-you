@@ -17,7 +17,8 @@ class RegisterController: UIViewController {
     
     // Return to login view when back btn is clicked
     @IBAction func btnReturn(_ sender: Any) {
-        returnToLogin()
+        let VC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.present(VC, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -27,13 +28,6 @@ class RegisterController: UIViewController {
         inputEmail.setBottomBorder()
         inputPassword.setBottomBorder()
         inputConfirmPassword.setBottomBorder()
-    }
-    
-    
-    // Return to login view controller
-    func returnToLogin() {
-        let VC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        self.present(VC, animated: true, completion: nil)
     }
 }
 
