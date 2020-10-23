@@ -13,7 +13,7 @@
         <!--LoginView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LoginView" id="BYZ-38-t0r" customClass="ViewController" customModule="word_with_you" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="LoginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="word_with_you" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +204,7 @@
         <!--RegisterView-->
         <scene sceneID="MwF-Hy-ERH">
             <objects>
-                <viewController title="RegisterView" id="zWO-Pw-vdV" customClass="ViewController" customModule="word_with_you" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="RegisterView" id="zWO-Pw-vdV" customClass="RegisterController" customModule="word_with_you" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rVz-IS-LeM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,6 +225,9 @@
                                                     <constraint firstAttribute="height" constant="50" id="eCd-D4-e4Q"/>
                                                 </constraints>
                                                 <state key="normal" image="left-arrow"/>
+                                                <connections>
+                                                    <action selector="btnReturn:" destination="zWO-Pw-vdV" eventType="touchUpInside" id="c2S-Ca-Ks5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -315,6 +318,9 @@
                                                                 <state key="normal" title="Login">
                                                                     <color key="titleColor" red="1" green="0.28126909579999998" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="btnReturn:" destination="zWO-Pw-vdV" eventType="touchUpInside" id="XDq-Pr-gel"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>

@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegisterController: UIViewController {
 
     // Textfield refs
     @IBOutlet weak var inputEmail: UITextField!
     @IBOutlet weak var inputPassword: UITextField!
     @IBOutlet weak var inputConfirmPassword: UITextField!
     
+    // Return to login view when back btn is clicked
+    @IBAction func btnReturn(_ sender: Any) {
+        returnToLogin()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +29,12 @@ class ViewController: UIViewController {
         inputConfirmPassword.setBottomBorder()
     }
     
+    
+    // Return to login view controller
+    func returnToLogin() {
+        let VC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.present(VC, animated: true, completion: nil)
+    }
 }
 
 
