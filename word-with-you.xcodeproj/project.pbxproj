@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		BA80C75725406BC0003F49DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA80C75625406BC0003F49DA /* AppDelegate.swift */; };
-		BA80C75925406BC0003F49DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA80C75825406BC0003F49DA /* ViewController.swift */; };
+		BA80C75925406BC0003F49DA /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA80C75825406BC0003F49DA /* RegisterController.swift */; };
 		BA80C75C25406BC0003F49DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA80C75A25406BC0003F49DA /* Main.storyboard */; };
 		BA80C75E25406BC3003F49DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA80C75D25406BC3003F49DA /* Assets.xcassets */; };
 		BA80C76125406BC3003F49DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA80C75F25406BC3003F49DA /* LaunchScreen.storyboard */; };
-		BA80C769254223F2003F49DA /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA80C768254223F2003F49DA /* DesignableView.swift */; };
+		BA80C76B25432D70003F49DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA80C76A25432D70003F49DA /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA80C75325406BC0003F49DA /* word-with-you.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "word-with-you.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA80C75625406BC0003F49DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA80C75825406BC0003F49DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA80C75825406BC0003F49DA /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		BA80C75B25406BC0003F49DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA80C75D25406BC3003F49DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA80C76025406BC3003F49DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA80C76225406BC3003F49DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA80C768254223F2003F49DA /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		BA80C76A25432D70003F49DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				BA80C75625406BC0003F49DA /* AppDelegate.swift */,
-				BA80C75825406BC0003F49DA /* ViewController.swift */,
+				BA80C75825406BC0003F49DA /* RegisterController.swift */,
 				BA80C75A25406BC0003F49DA /* Main.storyboard */,
 				BA80C75D25406BC3003F49DA /* Assets.xcassets */,
 				BA80C75F25406BC3003F49DA /* LaunchScreen.storyboard */,
 				BA80C76225406BC3003F49DA /* Info.plist */,
-				BA80C768254223F2003F49DA /* DesignableView.swift */,
+				BA80C76A25432D70003F49DA /* LoginViewController.swift */,
 			);
 			path = "word-with-you";
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA80C75925406BC0003F49DA /* ViewController.swift in Sources */,
+				BA80C76B25432D70003F49DA /* LoginViewController.swift in Sources */,
+				BA80C75925406BC0003F49DA /* RegisterController.swift in Sources */,
 				BA80C75725406BC0003F49DA /* AppDelegate.swift in Sources */,
-				BA80C769254223F2003F49DA /* DesignableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
