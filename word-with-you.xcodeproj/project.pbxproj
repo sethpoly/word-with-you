@@ -14,6 +14,7 @@
 		BA80C76125406BC3003F49DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA80C75F25406BC3003F49DA /* LaunchScreen.storyboard */; };
 		BA80C76B25432D70003F49DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA80C76A25432D70003F49DA /* LoginViewController.swift */; };
 		BAC53FE62545ABDA00FB1404 /* DevotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC53FE52545ABDA00FB1404 /* DevotionViewController.swift */; };
+		BAC53FE92545BFB000FB1404 /* sample1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC53FE82545BFB000FB1404 /* sample1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BA80C76225406BC3003F49DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA80C76A25432D70003F49DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BAC53FE52545ABDA00FB1404 /* DevotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewController.swift; sourceTree = "<group>"; };
+		BAC53FE82545BFB000FB1404 /* sample1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		BA80C75525406BC0003F49DA /* word-with-you */ = {
 			isa = PBXGroup;
 			children = (
+				BAC53FE72545BF3900FB1404 /* Audio */,
 				BAC53FE42545AB7000FB1404 /* Storyboards */,
 				BAC53FE32545AB5300FB1404 /* Views */,
 				BA80C75625406BC0003F49DA /* AppDelegate.swift */,
@@ -84,6 +87,14 @@
 				BA80C75F25406BC3003F49DA /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BAC53FE72545BF3900FB1404 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				BAC53FE82545BFB000FB1404 /* sample1.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC53FE92545BFB000FB1404 /* sample1.mp3 in Resources */,
 				BA80C76125406BC3003F49DA /* LaunchScreen.storyboard in Resources */,
 				BA80C75E25406BC3003F49DA /* Assets.xcassets in Resources */,
 				BA80C75C25406BC0003F49DA /* Main.storyboard in Resources */,
