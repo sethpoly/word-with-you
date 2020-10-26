@@ -38,10 +38,13 @@ class DevotionViewController: UIViewController {
             print("Playing music")
             playPauseState = 1
             // Set image to pause
+            playBtn.setTitle("Pause", for: .normal)
         } else {
             audioPlayer.pause()
             playPauseState = 0
             // Set image to play
+            playBtn.setTitle("Play", for: .normal)
+
         }
         
     }
@@ -52,6 +55,7 @@ class DevotionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadImage()
         
         // Update slider by using timers
         _ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateSlider), userInfo: nil, repeats: true)
@@ -65,26 +69,26 @@ class DevotionViewController: UIViewController {
             print("mp3 is corrupted or not found")
         }
         
-        
-      
-        // Load audio source to player
-//        if let pathString = pathString {
-//            let pathURL = URL(fileURLWithPath: pathString)
-//            do{
-//                try audioPlayer = AVAudioPlayer(contentsOf: pathURL)
-//            } catch {
-//                print("error")
-//            }
-//        }
-        
         // Set slider value
+        // TODO: Error handling if audioplayer has no song loaded
         slider.maximumValue = Float(audioPlayer.duration)
+        
+        
+        
     }
     
     // Update slider value
     @objc func updateSlider() {
         slider.value = Float(audioPlayer.currentTime)
-        print(slider.value)
+    }
+    
+    // Load background image artwork
+    func loadImage() {
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "login_placeholder")
+        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
+        
     }
 
     
