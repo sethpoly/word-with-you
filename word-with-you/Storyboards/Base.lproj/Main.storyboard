@@ -125,6 +125,7 @@
                         <viewLayoutGuide key="safeArea" id="eEQ-Xr-TbT"/>
                     </view>
                     <connections>
+                        <outlet property="playPauseBtn" destination="JCq-9y-7MT" id="SVV-Xu-ZyI"/>
                         <outlet property="slider" destination="IJa-lc-15M" id="NY4-lg-UHf"/>
                     </connections>
                 </viewController>

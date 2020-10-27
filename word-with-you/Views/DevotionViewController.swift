@@ -14,9 +14,11 @@ import AVFoundation
 
 class DevotionViewController: UIViewController {
     
+    @IBOutlet weak var playPauseBtn: UIButton!
+    @IBOutlet weak var slider: UISlider!
+    
     var audioPlayer = AVAudioPlayer()
     var playPauseState = 0     // Used when interchanging play/pause functionality for play btn
-    @IBOutlet weak var slider: UISlider!
     
     
     // Add current devotion to liked list
@@ -44,13 +46,17 @@ class DevotionViewController: UIViewController {
             playPauseState = 0
             // Set image to play
             playBtn.setTitle("Play", for: .normal)
-
         }
-        
     }
     
     // Go to any part of audio via horizontal slider
     @IBAction func scrubAudio(_ sender: Any) {
+        audioPlayer.stop();
+        audioPlayer.currentTime = TimeInterval(slider.value)
+        
+        // Set play state to pause
+        playPauseBtn.setTitle("Play", for: .normal)
+        playPauseState = 0
     }
     
     override func viewDidLoad() {
