@@ -14,6 +14,11 @@ class TranscriptViewController: UIViewController {
     
     let transparencyColor = UIColor(white: 1, alpha: 0.7)
     
+    // Close transcript modal & return to devotion view
+    @IBAction func closeTranscript(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +33,7 @@ class TranscriptViewController: UIViewController {
     func convertToRich() {
         do {
             let attrStr = try NSAttributedString(
-                data: "<h1 style='text-align:center'>Test Title</h1><br><br><p></b>YOOOO</b>, this is some straight up <i>RICH TEXT</i></p><br><p>Check it out...</p>".data(using: String.Encoding.unicode, allowLossyConversion: true)!,
+                data: "<style type='text/css'>p{font-size: 18px;}</style><body><h1 style='text-align:center'>Test Title</h1><br><br><p><b>YOOOO</b>, this is some straight up <i>RICH TEXT</i></p><p>Check it out...</p></body>".data(using: String.Encoding.unicode, allowLossyConversion: true)!,
                 options: [.documentType : NSAttributedString.DocumentType.html],
                 documentAttributes: nil)
             textView.attributedText = attrStr

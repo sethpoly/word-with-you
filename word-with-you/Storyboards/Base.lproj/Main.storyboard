@@ -18,15 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY6-1R-pBb">
-                                <rect key="frame" x="20" y="97" width="374" height="765"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="u4U-Uh-WN4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="MNB-hZ-FVo">
+                                        <rect key="frame" x="25" y="52" width="364" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-oe-HLM">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="OO1-hK-Xrk"/>
+                                                </constraints>
+                                                <state key="normal" image="left-arrow"/>
+                                                <connections>
+                                                    <action selector="closeTranscript:" destination="pnh-oK-PoB" eventType="touchUpInside" id="eSa-Bx-CvO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="h2K-RD-Nxu"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY6-1R-pBb">
+                                        <rect key="frame" x="25" y="116" width="364" height="738"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="25" bottom="8" right="25"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8B1-fU-UCg" firstAttribute="trailing" secondItem="u4U-Uh-WN4" secondAttribute="trailing" id="BXz-N7-1Jj"/>
+                            <constraint firstItem="u4U-Uh-WN4" firstAttribute="leading" secondItem="PCL-VG-xrZ" secondAttribute="leading" id="TMM-El-9JO"/>
+                            <constraint firstItem="u4U-Uh-WN4" firstAttribute="top" secondItem="PCL-VG-xrZ" secondAttribute="top" id="WJa-OS-67f"/>
+                            <constraint firstAttribute="bottom" secondItem="u4U-Uh-WN4" secondAttribute="bottom" id="vxk-Rf-rXw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8B1-fU-UCg"/>
                     </view>
                     <connections>
