@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pnh-oK-PoB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1aH-dN-azQ">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,12 +14,12 @@
         <scene sceneID="qIo-Hd-tdv">
             <objects>
                 <viewController storyboardIdentifier="TranscriptViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pnh-oK-PoB" customClass="TranscriptViewController" customModule="word_with_you" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nkc-Mg-La8">
+                    <view key="view" contentMode="scaleToFill" id="PCL-VG-xrZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="none" translatesAutoresizingMaskIntoConstraints="NO" id="BVj-Km-RZ9">
-                                <rect key="frame" x="87" y="228" width="240" height="224"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY6-1R-pBb">
+                                <rect key="frame" x="20" y="97" width="374" height="765"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -27,15 +27,15 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="pNC-j4-hJ2"/>
+                        <viewLayoutGuide key="safeArea" id="8B1-fU-UCg"/>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="BVj-Km-RZ9" id="IaD-VI-bmI"/>
+                        <outlet property="textView" destination="TY6-1R-pBb" id="A6i-gk-czD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qe-DQ-Lcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-711.59420289855075" y="783.48214285714278"/>
+            <point key="canvasLocation" x="213.04347826086959" y="859.82142857142856"/>
         </scene>
         <!--DevotionView-->
         <scene sceneID="18X-Z0-qAn">
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qx2-97-3G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767" y="747"/>
+            <point key="canvasLocation" x="-690" y="860"/>
         </scene>
         <!--LoginView-->
         <scene sceneID="tne-QT-ifu">
@@ -291,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+            <point key="canvasLocation" x="-335" y="162"/>
         </scene>
         <!--RegisterView-->
         <scene sceneID="MwF-Hy-ERH">

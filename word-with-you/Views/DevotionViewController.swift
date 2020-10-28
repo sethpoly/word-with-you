@@ -26,8 +26,12 @@ class DevotionViewController: UIViewController {
     }
     
     // Open popup modal for transcript of current devotion
-    // TODO: Have to design this modal
+    // Have to pass ID of devotion so we can fetch the transcript from the db
     @IBAction func openTranscript(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let transcriptView = storyboard.instantiateViewController(withIdentifier: "TranscriptViewController") as! TranscriptViewController
+        transcriptView.modalPresentationStyle = .overCurrentContext
+        present(transcriptView, animated: true, completion: nil)
     }
     
     // If play btn is pressed, play audio and change icon to PAUSE - vice versa

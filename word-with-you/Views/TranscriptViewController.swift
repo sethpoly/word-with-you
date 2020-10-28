@@ -12,10 +12,16 @@ class TranscriptViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
+    let transparencyColor = UIColor(white: 1, alpha: 0.7)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         convertToRich()
+        
+        
+        view.backgroundColor = transparencyColor
+        textView.backgroundColor = UIColor(white: 1, alpha: 0.1)
     }
     
     // Test rich txt format to textview
