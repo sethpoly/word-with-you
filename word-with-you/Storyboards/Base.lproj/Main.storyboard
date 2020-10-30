@@ -94,26 +94,76 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="AGF-4N-2eF">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eXm-PD-RAu">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="eXm-PD-RAu">
                                         <rect key="frame" x="25" y="8" width="364" height="50"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-gF-Pzs">
-                                                <rect key="frame" x="0.0" y="0.0" width="284" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-gF-Pzs">
+                                                <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibt-0Q-49I">
-                                                <rect key="frame" x="294" y="0.0" width="30" height="50"/>
-                                                <state key="normal" title="Like"/>
-                                                <connections>
-                                                    <action selector="likeDevotion:" destination="1aH-dN-azQ" eventType="touchUpInside" id="plQ-cW-q8x"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxq-KI-VrQ">
-                                                <rect key="frame" x="334" y="0.0" width="30" height="50"/>
-                                                <state key="normal" title="Text"/>
-                                                <connections>
-                                                    <action selector="openTranscript:" destination="1aH-dN-azQ" eventType="touchUpInside" id="at8-pT-xql"/>
-                                                </connections>
-                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8x-Jd-GJa">
+                                                <rect key="frame" x="259" y="0.0" width="105" height="50"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="1sp-08-sZR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="50"/>
+                                                        <subviews>
+                                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3Z-s9-8E8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="5" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="5" id="8as-9W-1YI"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-Gi-dOe">
+                                                                <rect key="frame" x="5" y="0.0" width="95" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibt-0Q-49I">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="30" id="cSL-B9-9d7"/>
+                                                                            <constraint firstAttribute="height" constant="50" id="hVi-ph-jlJ"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                                        <state key="normal" image="heart"/>
+                                                                        <connections>
+                                                                            <action selector="likeDevotion:" destination="1aH-dN-azQ" eventType="touchUpInside" id="plQ-cW-q8x"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxq-KI-VrQ">
+                                                                        <rect key="frame" x="65" y="0.0" width="30" height="50"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="F3c-lF-tjb"/>
+                                                                            <constraint firstAttribute="width" constant="30" id="Vmj-5o-55H"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="document"/>
+                                                                        <connections>
+                                                                            <action selector="openTranscript:" destination="1aH-dN-azQ" eventType="touchUpInside" id="at8-pT-xql"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ty-2j-Bpg">
+                                                                <rect key="frame" x="100" y="0.0" width="5" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="5" id="Rcv-NY-rVh"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="1sp-08-sZR" firstAttribute="leading" secondItem="i8x-Jd-GJa" secondAttribute="leading" id="Hdg-3g-ADx"/>
+                                                    <constraint firstItem="1sp-08-sZR" firstAttribute="top" secondItem="i8x-Jd-GJa" secondAttribute="top" id="JGK-aV-HO9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1sp-08-sZR" secondAttribute="trailing" id="vLa-dA-EHz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1sp-08-sZR" secondAttribute="bottom" id="wwm-So-3Dn"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="93u-n5-V5D"/>
@@ -193,8 +243,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="cgP-3f-E3i"/>
                     <connections>
+                        <outlet property="likeBtn" destination="Ibt-0Q-49I" id="XuM-6f-qae"/>
                         <outlet property="playPauseBtn" destination="JCq-9y-7MT" id="SVV-Xu-ZyI"/>
                         <outlet property="slider" destination="IJa-lc-15M" id="NY4-lg-UHf"/>
+                        <outlet property="transcriptBtn" destination="xxq-KI-VrQ" id="x17-fg-gbz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qx2-97-3G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -490,6 +542,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="document" width="32" height="32"/>
+        <image name="heart" width="32" height="32"/>
         <image name="left-arrow" width="50" height="50"/>
     </resources>
 </document>

@@ -16,6 +16,9 @@ class DevotionViewController: UIViewController {
     
     @IBOutlet weak var playPauseBtn: UIButton!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var likeBtn: UIButton!
+    @IBOutlet weak var transcriptBtn: UIButton!
+
     
     var audioPlayer = AVAudioPlayer()
     var playPauseState = 0     // Used when interchanging play/pause functionality for play btn
@@ -23,6 +26,10 @@ class DevotionViewController: UIViewController {
     
     // Add current devotion to liked list
     @IBAction func likeDevotion(_ sender: Any) {
+        // Change heart to filled heart
+        likeBtn.isSelected = !likeBtn.isSelected
+        
+        // Add or remove to user's "liked" list
     }
     
     // Open popup modal for transcript of current devotion
@@ -66,6 +73,7 @@ class DevotionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadImage()
+        setBtnStates()
         
         // Update slider by using timers
         _ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateSlider), userInfo: nil, repeats: true)
@@ -83,8 +91,6 @@ class DevotionViewController: UIViewController {
         // TODO: Error handling if audioplayer has no song loaded
         slider.maximumValue = Float(audioPlayer.duration)
         
-        
-        
     }
     
     // Update slider value
@@ -98,6 +104,27 @@ class DevotionViewController: UIViewController {
         backgroundImage.image = UIImage(named: "login_placeholder")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
+        
+    }
+    
+    // Set states for like button
+    func setBtnStates(){
+        let likeBtnImg = UIImage(named: "heart")
+        let likedTintedImg = likeBtnImg?.withRenderingMode((.alwaysTemplate))
+        likeBtn.setImage(likedTintedImg, for: .normal)
+        likeBtn.tintColor = .black
+        // On enable
+        let filledBtnImg = UIImage(named: "filledHeart")
+        let filledTintedImg = filledBtnImg?.withRenderingMode((.alwaysTemplate))
+        likeBtn.setImage(filledTintedImg, for: .selected)
+        likeBtn.tintColor = .black
+        
+        
+        let transcriptBtnImg = UIImage(named: "document")
+        let transcriptTintImg = transcriptBtnImg?.withRenderingMode((.alwaysTemplate))
+        transcriptBtn.setImage(transcriptTintImg, for: .normal)
+        transcriptBtn.tintColor = .black
+        
         
     }
 
