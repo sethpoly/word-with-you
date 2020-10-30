@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1aH-dN-azQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O4c-v4-dCe">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -64,7 +64,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qe-DQ-Lcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213.04347826086959" y="859.82142857142856"/>
+            <point key="canvasLocation" x="-1400" y="-397"/>
+        </scene>
+        <!--TabBarController-->
+        <scene sceneID="1px-Sn-RQM">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" title="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O4c-v4-dCe" customClass="TabBarViewController" customModule="word_with_you" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sKQ-nq-Kpz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1aH-dN-azQ" kind="relationship" relationship="viewControllers" id="3Kz-TN-muV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wz-GX-acs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2481" y="777"/>
         </scene>
         <!--DevotionView-->
         <scene sceneID="18X-Z0-qAn">
@@ -75,19 +92,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="AGF-4N-2eF">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eXm-PD-RAu">
                                         <rect key="frame" x="25" y="8" width="364" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-gF-Pzs">
                                                 <rect key="frame" x="0.0" y="0.0" width="284" height="50"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc5-lM-sby">
-                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="50"/>
-                                                        <state key="normal" title="Menu"/>
-                                                    </button>
-                                                </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibt-0Q-49I">
                                                 <rect key="frame" x="294" y="0.0" width="30" height="50"/>
@@ -109,11 +120,11 @@
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfQ-4Z-4U4">
-                                        <rect key="frame" x="25" y="158" width="364" height="384"/>
+                                        <rect key="frame" x="25" y="158" width="364" height="335"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eNw-2I-Bco">
-                                        <rect key="frame" x="25" y="642" width="364" height="168"/>
+                                        <rect key="frame" x="25" y="593" width="364" height="168"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eAQ-KI-TgK">
                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="116"/>
@@ -180,6 +191,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eEQ-Xr-TbT"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="cgP-3f-E3i"/>
                     <connections>
                         <outlet property="playPauseBtn" destination="JCq-9y-7MT" id="SVV-Xu-ZyI"/>
                         <outlet property="slider" destination="IJa-lc-15M" id="NY4-lg-UHf"/>
@@ -187,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qx2-97-3G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-690" y="860"/>
+            <point key="canvasLocation" x="-1400" y="244"/>
         </scene>
         <!--LoginView-->
         <scene sceneID="tne-QT-ifu">
@@ -474,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rna-zU-Hpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768" y="25"/>
+            <point key="canvasLocation" x="286" y="161"/>
         </scene>
     </scenes>
     <resources>
