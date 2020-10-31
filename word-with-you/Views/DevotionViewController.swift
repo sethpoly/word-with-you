@@ -44,19 +44,19 @@ class DevotionViewController: UIViewController {
     // If play btn is pressed, play audio and change icon to PAUSE - vice versa
     // States => 0: ready to play , 1: ready to pause
     @IBAction func playPauseAudio(_ sender: Any) {
-        var playBtn = sender as! UIButton
+        let playBtn = sender as! UIButton
         if playPauseState == 0 {
             audioPlayer.pause()
             audioPlayer.play()
             print("Playing music")
             playPauseState = 1
             // Set image to pause
-            playBtn.setTitle("Pause", for: .normal)
+            playBtn.setImage(UIImage(named: "pause.png"), for: .normal)
         } else {
             audioPlayer.pause()
             playPauseState = 0
             // Set image to play
-            playBtn.setTitle("Play", for: .normal)
+            playBtn.setImage(UIImage(named: "play.png"), for: .normal)
         }
     }
     
@@ -66,7 +66,7 @@ class DevotionViewController: UIViewController {
         audioPlayer.currentTime = TimeInterval(slider.value)
         
         // Set play state to pause
-        playPauseBtn.setTitle("Play", for: .normal)
+        playPauseBtn.setImage(UIImage(named: "play.png"), for: .normal)
         playPauseState = 0
     }
     
@@ -104,7 +104,6 @@ class DevotionViewController: UIViewController {
         backgroundImage.image = UIImage(named: "login_placeholder")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        
     }
     
     // Set states for like button
@@ -124,6 +123,11 @@ class DevotionViewController: UIViewController {
         let transcriptTintImg = transcriptBtnImg?.withRenderingMode((.alwaysTemplate))
         transcriptBtn.setImage(transcriptTintImg, for: .normal)
         transcriptBtn.tintColor = .black
+    }
+    
+    // Change the color of play,pause,+15,-15 buttons to white
+    func changeButtonColors() {
+        
     }
 
     

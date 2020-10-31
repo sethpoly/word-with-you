@@ -170,14 +170,14 @@
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfQ-4Z-4U4">
-                                        <rect key="frame" x="25" y="158" width="364" height="335"/>
+                                        <rect key="frame" x="25" y="158" width="364" height="285"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eNw-2I-Bco">
-                                        <rect key="frame" x="25" y="593" width="364" height="168"/>
+                                        <rect key="frame" x="25" y="543" width="364" height="218"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eAQ-KI-TgK">
-                                                <rect key="frame" x="0.0" y="0.0" width="364" height="116"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="166"/>
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-lc-15M" customClass="CustomSlider" customModule="word_with_you" customModuleProvider="target">
                                                         <rect key="frame" x="6" y="8" width="352" height="51"/>
@@ -197,21 +197,25 @@
                                                         </connections>
                                                     </slider>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="PkE-3t-xHz">
-                                                        <rect key="frame" x="27.666666666666657" y="78" width="309" height="30"/>
+                                                        <rect key="frame" x="8" y="78" width="348" height="80"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCH-Uw-3Gk">
-                                                                <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCH-Uw-3Gk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="47" height="80"/>
                                                                 <state key="normal" title="-15sec"/>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCq-9y-7MT">
-                                                                <rect key="frame" x="138" y="0.0" width="30" height="30"/>
-                                                                <state key="normal" title="Play"/>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCq-9y-7MT">
+                                                                <rect key="frame" x="138" y="0.0" width="80" height="80"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="80" id="PBe-qm-wQG"/>
+                                                                    <constraint firstAttribute="height" constant="80" id="aQE-kj-PDD"/>
+                                                                </constraints>
+                                                                <state key="normal" image="play"/>
                                                                 <connections>
                                                                     <action selector="playPauseAudio:" destination="1aH-dN-azQ" eventType="touchUpInside" id="aN9-zi-jPM"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPE-kp-av3">
-                                                                <rect key="frame" x="259" y="0.0" width="50" height="30"/>
+                                                                <rect key="frame" x="309" y="0.0" width="39" height="80"/>
                                                                 <state key="normal" title="+15sec"/>
                                                             </button>
                                                         </subviews>
@@ -226,7 +230,7 @@
                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-QE-DQ5">
-                                                <rect key="frame" x="15.666666666666657" y="118" width="333" height="50"/>
+                                                <rect key="frame" x="15.666666666666657" y="168" width="333" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="cWo-C9-hIS"/>
@@ -551,5 +555,6 @@
         <image name="document" width="32" height="32"/>
         <image name="heart" width="32" height="32"/>
         <image name="left-arrow" width="50" height="50"/>
+        <image name="play" width="50" height="50"/>
     </resources>
 </document>
