@@ -124,8 +124,6 @@ class DevotionViewController: UIViewController {
         let transcriptTintImg = transcriptBtnImg?.withRenderingMode((.alwaysTemplate))
         transcriptBtn.setImage(transcriptTintImg, for: .normal)
         transcriptBtn.tintColor = .black
-        
-        
     }
 
     

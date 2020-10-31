@@ -179,13 +179,19 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eAQ-KI-TgK">
                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="116"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-lc-15M">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-lc-15M" customClass="CustomSlider" customModule="word_with_you" customModuleProvider="target">
                                                         <rect key="frame" x="6" y="8" width="352" height="51"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="RQ6-o3-bAi"/>
                                                         </constraints>
-                                                        <color key="minimumTrackTintColor" red="1" green="0.28126909579999998" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="maximumTrackTintColor" red="1" green="0.49803921569999998" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="minimumTrackTintColor" red="0.92965070072897393" green="1" blue="0.91534602626140038" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="maximumTrackTintColor" red="0.96594900920557181" green="0.99835362282399132" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="scrubAudio:" destination="1aH-dN-azQ" eventType="valueChanged" id="L5x-FB-X8F"/>
                                                         </connections>
