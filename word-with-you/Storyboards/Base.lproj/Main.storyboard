@@ -98,23 +98,23 @@
                                         <rect key="frame" x="25" y="8" width="364" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-gF-Pzs">
-                                                <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="249" height="50"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8x-Jd-GJa">
-                                                <rect key="frame" x="259" y="0.0" width="105" height="50"/>
+                                                <rect key="frame" x="249" y="0.0" width="115" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="1sp-08-sZR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                                         <subviews>
                                                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3Z-s9-8E8">
-                                                                <rect key="frame" x="0.0" y="0.0" width="5" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="10" height="50"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="5" id="8as-9W-1YI"/>
+                                                                    <constraint firstAttribute="width" constant="10" id="8as-9W-1YI"/>
                                                                 </constraints>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-Gi-dOe">
-                                                                <rect key="frame" x="5" y="0.0" width="95" height="50"/>
+                                                                <rect key="frame" x="10" y="0.0" width="95" height="50"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibt-0Q-49I">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
@@ -134,7 +134,7 @@
                                                                             <constraint firstAttribute="height" constant="50" id="F3c-lF-tjb"/>
                                                                             <constraint firstAttribute="width" constant="30" id="Vmj-5o-55H"/>
                                                                         </constraints>
-                                                                        <state key="normal" image="document"/>
+                                                                        <state key="normal" image="transcript"/>
                                                                         <connections>
                                                                             <action selector="openTranscript:" destination="1aH-dN-azQ" eventType="touchUpInside" id="at8-pT-xql"/>
                                                                         </connections>
@@ -142,10 +142,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ty-2j-Bpg">
-                                                                <rect key="frame" x="100" y="0.0" width="5" height="50"/>
+                                                                <rect key="frame" x="105" y="0.0" width="10" height="50"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="5" id="Rcv-NY-rVh"/>
+                                                                    <constraint firstAttribute="width" constant="10" id="Rcv-NY-rVh"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
@@ -572,11 +572,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="document" width="32" height="32"/>
         <image name="heart" width="32" height="32"/>
         <image name="left-arrow" width="50" height="50"/>
         <image name="minus_15" width="50" height="50"/>
         <image name="play" width="50" height="50"/>
         <image name="plus_15" width="50" height="50"/>
+        <image name="transcript" width="30" height="30"/>
     </resources>
 </document>

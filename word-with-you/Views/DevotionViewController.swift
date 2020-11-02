@@ -133,18 +133,10 @@ class DevotionViewController: UIViewController {
         likeBtn.tintColor = .black
         
         
-        let transcriptBtnImg = UIImage(named: "document")
-        let transcriptTintImg = transcriptBtnImg?.withRenderingMode((.alwaysTemplate))
-        transcriptBtn.setImage(transcriptTintImg, for: .normal)
-        transcriptBtn.tintColor = .black
+//        let transcriptBtnImg = UIImage(named: "document")
+//        let transcriptTintImg = transcriptBtnImg?.withRenderingMode((.alwaysTemplate))
+//        transcriptBtn.setImage(transcriptTintImg, for: .normal)
+//        transcriptBtn.tintColor = .black
     }
-    
-    // Change the color of play,pause,+15,-15 buttons to white
-    func changeButtonColors() {
-        
-    }
-
-    
-    
     
 }
