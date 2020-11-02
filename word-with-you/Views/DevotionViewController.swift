@@ -60,6 +60,20 @@ class DevotionViewController: UIViewController {
         }
     }
     
+    // add or subtract 15 seconds to current audio playing
+    @IBAction func scrubFifteen(_ sender: Any){
+        let senderBtn = sender as! UIButton
+        let senderTag = senderBtn.tag
+        
+        if senderTag == 0 {
+            audioPlayer.currentTime -= 15
+        }
+        else if senderTag == 1 {
+            audioPlayer.currentTime += 15
+        }
+    }
+
+    
     // Go to any part of audio via horizontal slider
     @IBAction func scrubAudio(_ sender: Any) {
         audioPlayer.stop();

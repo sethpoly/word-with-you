@@ -209,6 +209,9 @@
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCH-Uw-3Gk">
                                                                 <rect key="frame" x="60" y="15" width="50" height="50"/>
                                                                 <state key="normal" image="minus_15"/>
+                                                                <connections>
+                                                                    <action selector="scrubFifteen:" destination="1aH-dN-azQ" eventType="touchUpInside" id="O3S-dF-qPi"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCq-9y-7MT">
                                                                 <rect key="frame" x="120" y="0.0" width="80" height="80"/>
@@ -221,9 +224,12 @@
                                                                     <action selector="playPauseAudio:" destination="1aH-dN-azQ" eventType="touchUpInside" id="aN9-zi-jPM"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPE-kp-av3">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPE-kp-av3">
                                                                 <rect key="frame" x="210" y="15" width="50" height="50"/>
                                                                 <state key="normal" image="plus_15"/>
+                                                                <connections>
+                                                                    <action selector="scrubFifteen:" destination="1aH-dN-azQ" eventType="touchUpInside" id="68d-Qd-ffi"/>
+                                                                </connections>
                                                             </button>
                                                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLV-yc-E5d">
                                                                 <rect key="frame" x="270" y="0.0" width="50" height="80"/>
